@@ -16,7 +16,7 @@
       };
     };
 
-    plugins.url = path:./plugins;
+    plugins.url = github:vkleen/neovim-configuration?dir=plugins;
     plugins.inputs = {
       utils.follows = "utils";
       nixpkgs.follows = "nixpkgs";
