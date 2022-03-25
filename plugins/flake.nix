@@ -60,6 +60,7 @@
     vimplugin-telescope-ghq = { url = github:nvim-telescope/telescope-ghq.nvim; flake = false; };
     vimplugin-telescope-lsp-handlers = { url = github:gbrlsnchs/telescope-lsp-handlers.nvim; flake = false; };
     vimplugin-telescope-nvim = { url = github:nvim-telescope/telescope.nvim; flake = false; };
+    vimplugin-telescope-ui-select = { url = github:nvim-telescope/telescope-ui-select.nvim; flake = false; };
     vimplugin-telescope-zoxide = { url = github:jvgrootveld/telescope-zoxide; flake = false; };
     vimplugin-trouble-nvim = { url = github:folke/trouble.nvim; flake = false; };
     vimplugin-vim-vsnip-integ = { url = github:hrsh7th/vim-vsnip-integ; flake = false; };
