@@ -18,9 +18,9 @@ parsers_code = parsers_body.decode("utf-8")
 parsers_data = parsers_re.findall(parsers_code)
 
 parsers_data += [('norg_meta', 'https://github.com/nvim-neorg/tree-sitter-norg-meta')]
-lockfile_data['norg_meta'] = {'revision': '8d9792bf94a22e4a1d0fdf6de52e099c471bf26e'}
+lockfile_data['norg_meta'] = {'revision': '4687b53e656b920cde6c0b9a7b9acf9a665cd838'}
 parsers_data += [('norg_table', 'https://github.com/nvim-neorg/tree-sitter-norg-table')]
-lockfile_data['norg_table'] = {'revision': '644fcd618463103566768e996e79b11c84cdfcd8'}
+lockfile_data['norg_table'] = {'revision': 'f354ea343b8803948e6e1df36eb586e31c529900'}
 
 grammars_file_path = os.path.join(grammars_path, "default.nix")
 with open(grammars_file_path, "w") as grammars_file:

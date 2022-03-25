@@ -20,7 +20,6 @@
     vimplugin-crates-nvim = { url = github:saecki/crates.nvim; flake = false; };
     vimplugin-direnv-vim = { url = github:direnv/direnv.vim; flake = false; };
     vimplugin-friendly-snippets = { url = github:rafamadriz/friendly-snippets; flake = false; };
-    vimplugin-fterm = { url = github:numtostr/FTerm.nvim; flake = false; };
     vimplugin-fzf-vim = { url = github:junegunn/fzf.vim; flake = false; };
     vimplugin-gitsigns-nvim = { url = github:lewis6991/gitsigns.nvim; flake = false; };
     vimplugin-indent-blankline = { url = github:lukas-reineke/indent-blankline.nvim; flake = false; };
@@ -59,6 +58,7 @@
     vimplugin-telescope-lsp-handlers = { url = github:gbrlsnchs/telescope-lsp-handlers.nvim; flake = false; };
     vimplugin-telescope-nvim = { url = github:nvim-telescope/telescope.nvim; flake = false; };
     vimplugin-telescope-zoxide = { url = github:jvgrootveld/telescope-zoxide; flake = false; };
+    vimplugin-toggleterm = { url = github:akinsho/toggleterm.nvim; flake = false; };
     vimplugin-trouble-nvim = { url = github:folke/trouble.nvim; flake = false; };
     vimplugin-vim-vsnip-integ = { url = github:hrsh7th/vim-vsnip-integ; flake = false; };
     vimplugin-vim-vsnip = { url = github:hrsh7th/vim-vsnip; flake = false; };

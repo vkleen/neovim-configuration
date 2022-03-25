@@ -62,7 +62,6 @@
       runtimeInputs = [ pkgs.nix pkgs.coreutils ];
       text = ''
         pushd plugins
-        nix flake update --inputs-from path:../.
         nix run .#update-grammars
         popd
         nix flake lock --update-input plugins
