@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
-    utils.url = github:vkleen/machine-utils;
+    utils.url = sourcehut:~vkleen/machine-utils?host=git.sr.ht.kleen.org;
     utils.inputs.nixpkgs.follows = "nixpkgs";
 
     neovim-flake = {
@@ -16,7 +16,7 @@
       };
     };
 
-    plugins.url = github:vkleen/neovim-configuration?dir=plugins;
+    plugins.url = sourcehut:~vkleen/neovim-configuration?dir=plugins&host=git.sr.ht.kleen.org;
     plugins.inputs = {
       utils.follows = "utils";
       nixpkgs.follows = "nixpkgs";
