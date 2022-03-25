@@ -63,6 +63,9 @@ function M.setup()
     [ '<M-j>' ] = { '<cmd>join<cr>', 'Join' },
 
     ['<leader>n'] = { '<cmd>nohl<cr>', 'Disable search highlight' },
+
+    ['<leader>;'] = { '<cmd>ToggleTerm direction=floating' },
+    ['<C-\\>'] = { '<cmd>ToggleTerm direction=vertical' },
   }, { mode = 'n' })
 
   require"which-key".register({

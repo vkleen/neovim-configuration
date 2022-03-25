@@ -37,10 +37,9 @@ local function on_attach(client, bufnr)
       h = { function() require"lspsaga.hover".render_hover_doc() end, 'Show hover info' },
       s = { function() require"lspsaga.signaturehelp".signature_help() end, 'Show signature help' },
       r = { function() require"lspsaga.rename".rename() end, 'Rename identifier' },
-      x = { function() require"telescope.builtin".lsp_code_actions() end, 'Code actions' },
+      x = { function() require"lspsaga.codeaction".code_action() end, 'Code actions' },
     },
     ['g'] = {
-      D = { function() vim.lsp.buf.declaration() end, 'Go to declaration' },
       d = { function() require"telescope.builtin".lsp_definitions() end, 'Go to definition' },
       r = { function() require"telescope.builtin".lsp_references() end, 'References' },
       i = { function() require"lspsaga.implement".lspsaga_implementation() end, 'Go to implementation' },
