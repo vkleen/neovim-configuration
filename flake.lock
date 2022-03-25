@@ -185,6 +185,7 @@
         "vimplugin-telescope-ghq": "vimplugin-telescope-ghq",
         "vimplugin-telescope-lsp-handlers": "vimplugin-telescope-lsp-handlers",
         "vimplugin-telescope-nvim": "vimplugin-telescope-nvim",
+        "vimplugin-telescope-ui-select": "vimplugin-telescope-ui-select",
         "vimplugin-telescope-zoxide": "vimplugin-telescope-zoxide",
         "vimplugin-trouble-nvim": "vimplugin-trouble-nvim",
         "vimplugin-vim-vsnip": "vimplugin-vim-vsnip",
@@ -194,11 +195,11 @@
       "locked": {
         "dir": "plugins",
         "host": "git.sr.ht.kleen.org",
-        "lastModified": 1648232134,
-        "narHash": "sha256-DgQOMEEYvathqXTSv79iShpZ/WmECt2pQt8n1jO6oA4=",
+        "lastModified": 1648245704,
+        "narHash": "sha256-ACsqvxN7lUhnZpbYTjNmTdLm2etNQpFs4BsuRV9Ztos=",
         "owner": "~vkleen",
         "repo": "neovim-configuration",
-        "rev": "c37a83977f2d21eb402eb136e66da57b7af2de61",
+        "rev": "888353a3f9a92f5c6cd7cf75762bbb0d1e49353b",
         "type": "sourcehut"
       },
       "original": {
@@ -612,11 +613,11 @@
     "vimplugin-luasnip": {
       "flake": false,
       "locked": {
-        "lastModified": 1648141729,
-        "narHash": "sha256-gHPkn2aXpcZbYeCYHBir2dTI7JsvluWsivF2N6OyYVE=",
+        "lastModified": 1648243438,
+        "narHash": "sha256-UxQUswRkzVvICMa1Xz6N51h5/89PUbiKirR7zj+cO5M=",
         "owner": "l3mon4d3",
         "repo": "luasnip",
-        "rev": "3c8d1bb3beb801ffc7ade9a7e20196b6e23da4fb",
+        "rev": "9017e57925eecedbbd530dd4f913ee8135611d25",
         "type": "github"
       },
       "original": {
@@ -644,11 +645,11 @@
     "vimplugin-neorg": {
       "flake": false,
       "locked": {
-        "lastModified": 1648137514,
-        "narHash": "sha256-AebXXnshVYAZkqHYZlTSY03QjlV+VUUmdM9DnSxX0UI=",
+        "lastModified": 1648241147,
+        "narHash": "sha256-iUQ5IZCQlmaiMvFN+FrpYC93Hg8apx8hO0xIb4rxeX8=",
         "owner": "nvim-neorg",
         "repo": "neorg",
-        "rev": "b4846ffc0f62dd59acb1c596f8cfab0590b9dcc2",
+        "rev": "11bf79c14213fea44bb863157c4e3900f120bd53",
         "type": "github"
       },
       "original": {
@@ -692,11 +693,11 @@
     "vimplugin-null-ls-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1648018716,
-        "narHash": "sha256-6FkfGJzU2XM8zENExCMasdN2giOPo5T4NlhLXsTrf6k=",
+        "lastModified": 1648243523,
+        "narHash": "sha256-uaXuXtU/iTfGSzgZx6mdf+XLta85cw82ynGozAMDyHc=",
         "owner": "jose-elias-alvarez",
         "repo": "null-ls.nvim",
-        "rev": "de2327ae9fbbe1b6feface32416ac1e800e134a4",
+        "rev": "7253974f8bd8c805a2a1cf7456b4d47913f4a094",
         "type": "github"
       },
       "original": {
@@ -1070,6 +1071,22 @@
       "original": {
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
+        "type": "github"
+      }
+    },
+    "vimplugin-telescope-ui-select": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647808851,
+        "narHash": "sha256-65/SEDm1HZ4iuEFJMOILUlMLY2Sq7zXW2os9UEkLodM=",
+        "owner": "nvim-telescope",
+        "repo": "telescope-ui-select.nvim",
+        "rev": "186a124a01d7f19e6fcf608d4e1cc61d61ebe939",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-telescope",
+        "repo": "telescope-ui-select.nvim",
         "type": "github"
       }
     },
