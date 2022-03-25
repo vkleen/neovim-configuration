@@ -10,6 +10,9 @@ function M.setup()
           override_file_sorter = true,
           case_mode = "smart_case",
         },
+        ["ui-select"] = {
+          require'telescope.themes'.get_dropdown {}
+        },
       },
       layout_strategy = "flex",
       mappings = {
@@ -26,6 +29,7 @@ function M.setup()
   require"telescope".load_extension("fzf")
   require"telescope".load_extension('lsp_handlers')
   require"telescope".load_extension('dap')
+  require"telescope".load_extension('ui-select')
   require"telescope._extensions.zoxide.config".setup{
     mappings = {
       default = {

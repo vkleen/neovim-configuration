@@ -148,6 +148,7 @@
         "vimplugin-fterm": "vimplugin-fterm",
         "vimplugin-fzf-vim": "vimplugin-fzf-vim",
         "vimplugin-gitsigns-nvim": "vimplugin-gitsigns-nvim",
+        "vimplugin-guihua": "vimplugin-guihua",
         "vimplugin-indent-blankline": "vimplugin-indent-blankline",
         "vimplugin-lightspeed-nvim": "vimplugin-lightspeed-nvim",
         "vimplugin-lsp-colors-nvim": "vimplugin-lsp-colors-nvim",
@@ -156,6 +157,7 @@
         "vimplugin-lspsaga-nvim": "vimplugin-lspsaga-nvim",
         "vimplugin-lualine": "vimplugin-lualine",
         "vimplugin-luasnip": "vimplugin-luasnip",
+        "vimplugin-navigator": "vimplugin-navigator",
         "vimplugin-neorg": "vimplugin-neorg",
         "vimplugin-nerdcommenter": "vimplugin-nerdcommenter",
         "vimplugin-nftables": "vimplugin-nftables",
@@ -192,11 +194,11 @@
       "locked": {
         "dir": "plugins",
         "host": "git.sr.ht.kleen.org",
-        "lastModified": 1648230242,
-        "narHash": "sha256-B/KsQu1t3H3R5cJim8O7ma6Ii3nXKgfQx4pR9k3WNM4=",
+        "lastModified": 1648232134,
+        "narHash": "sha256-DgQOMEEYvathqXTSv79iShpZ/WmECt2pQt8n1jO6oA4=",
         "owner": "~vkleen",
         "repo": "neovim-configuration",
-        "rev": "6d5178df97b333dc4d77412bd22191d22cf5557a",
+        "rev": "c37a83977f2d21eb402eb136e66da57b7af2de61",
         "type": "sourcehut"
       },
       "original": {
@@ -479,6 +481,22 @@
         "type": "github"
       }
     },
+    "vimplugin-guihua": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646609956,
+        "narHash": "sha256-QL+hm2NszglKYZvuh73NMFVt3KnMnwKjT1WiUebl0cs=",
+        "owner": "ray-x",
+        "repo": "guihua.lua",
+        "rev": "a07ad399646282ffb6d582f980949d628cc72532",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ray-x",
+        "repo": "guihua.lua",
+        "type": "github"
+      }
+    },
     "vimplugin-indent-blankline": {
       "flake": false,
       "locked": {
@@ -604,6 +622,22 @@
       "original": {
         "owner": "l3mon4d3",
         "repo": "luasnip",
+        "type": "github"
+      }
+    },
+    "vimplugin-navigator": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647446629,
+        "narHash": "sha256-fwDF0WkPeXURH4UeIiTsYLG1f5y4ol2qyh5INNT/12I=",
+        "owner": "ray-x",
+        "repo": "navigator.lua",
+        "rev": "7f22411b1f4a541488268191127de4ce4803bc0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ray-x",
+        "repo": "navigator.lua",
         "type": "github"
       }
     },

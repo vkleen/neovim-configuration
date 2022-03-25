@@ -47,13 +47,14 @@ let
     friendly-snippets
     fterm
     gitsigns-nvim
+    guihua
     indent-blankline
     lsp-colors-nvim
     lspkind-nvim
-    lspsaga-nvim
     lsp_signature
     lualine
     luasnip
+    navigator
     nftables
     null-ls-nvim
     numb-nvim
@@ -76,6 +77,7 @@ let
     telescope-fzf-nvim
     telescope-lsp-handlers
     telescope-nvim
+    telescope-ui-select
     telescope-zoxide
     trouble-nvim
     which-key-nvim
