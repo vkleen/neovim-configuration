@@ -145,6 +145,7 @@
         "vimplugin-crates-nvim": "vimplugin-crates-nvim",
         "vimplugin-direnv-vim": "vimplugin-direnv-vim",
         "vimplugin-friendly-snippets": "vimplugin-friendly-snippets",
+        "vimplugin-fterm": "vimplugin-fterm",
         "vimplugin-fzf-vim": "vimplugin-fzf-vim",
         "vimplugin-gitsigns-nvim": "vimplugin-gitsigns-nvim",
         "vimplugin-indent-blankline": "vimplugin-indent-blankline",
@@ -183,7 +184,6 @@
         "vimplugin-telescope-lsp-handlers": "vimplugin-telescope-lsp-handlers",
         "vimplugin-telescope-nvim": "vimplugin-telescope-nvim",
         "vimplugin-telescope-zoxide": "vimplugin-telescope-zoxide",
-        "vimplugin-toggleterm": "vimplugin-toggleterm",
         "vimplugin-trouble-nvim": "vimplugin-trouble-nvim",
         "vimplugin-vim-vsnip": "vimplugin-vim-vsnip",
         "vimplugin-vim-vsnip-integ": "vimplugin-vim-vsnip-integ",
@@ -192,11 +192,11 @@
       "locked": {
         "dir": "plugins",
         "host": "git.sr.ht.kleen.org",
-        "lastModified": 1648221681,
-        "narHash": "sha256-E30YG0c+sxO8W4dFWPdoPlYjZ6T8g13W5Lo6oktxj3w=",
+        "lastModified": 1648230242,
+        "narHash": "sha256-B/KsQu1t3H3R5cJim8O7ma6Ii3nXKgfQx4pR9k3WNM4=",
         "owner": "~vkleen",
         "repo": "neovim-configuration",
-        "rev": "4dc598f8b9ea6b89cb8af40fe0ea17b2a8b43ed4",
+        "rev": "6d5178df97b333dc4d77412bd22191d22cf5557a",
         "type": "sourcehut"
       },
       "original": {
@@ -431,6 +431,22 @@
         "type": "github"
       }
     },
+    "vimplugin-fterm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647158214,
+        "narHash": "sha256-6IZpKDw0pdBbWnCk4H7KuKcIWTwfH+NyJSr2IFKMtms=",
+        "owner": "numtostr",
+        "repo": "fterm.nvim",
+        "rev": "233633a5f6fe8398187a4eba93eba0828ef3d5f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtostr",
+        "repo": "fterm.nvim",
+        "type": "github"
+      }
+    },
     "vimplugin-fzf-vim": {
       "flake": false,
       "locked": {
@@ -450,11 +466,11 @@
     "vimplugin-gitsigns-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1647680621,
-        "narHash": "sha256-c19E2zdVRuemynm8cu66MuXKBjc+JGZtj4wllGHZJ5E=",
+        "lastModified": 1648229045,
+        "narHash": "sha256-z0EjJ+BnpK9yOdvgTjYesAcjC9s7TEDvcU4zRJjIJ0Q=",
         "owner": "lewis6991",
         "repo": "gitsigns.nvim",
-        "rev": "3791dfa1ee356a3250e0b74f63bad90e27455f60",
+        "rev": "2a107231d92fa37224efdbc475abfba71f94b5ee",
         "type": "github"
       },
       "original": {
@@ -722,11 +738,11 @@
     "vimplugin-nvim-dap": {
       "flake": false,
       "locked": {
-        "lastModified": 1648023076,
-        "narHash": "sha256-S84MP2TNzF0jsoRj5TYFwioTSe30GBvt1ycoDZIFXTc=",
+        "lastModified": 1648228468,
+        "narHash": "sha256-5k8j/GsUmbCkBag2Es5HrOybynR07b5eLFzRA2Rnp3A=",
         "owner": "mfussenegger",
         "repo": "nvim-dap",
-        "rev": "c367b7204a88644515d667b9ebb27b5e32890017",
+        "rev": "e6d7ba5847fbe5f33ba211cf28d3cea72cfa9865",
         "type": "github"
       },
       "original": {
@@ -1036,22 +1052,6 @@
       "original": {
         "owner": "jvgrootveld",
         "repo": "telescope-zoxide",
-        "type": "github"
-      }
-    },
-    "vimplugin-toggleterm": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1648127034,
-        "narHash": "sha256-ubp9ZrLrX9cQAnbTIgbj3jy14Np3bfwi1lxwluzkEIU=",
-        "owner": "akinsho",
-        "repo": "toggleterm.nvim",
-        "rev": "9f969e7f72d19966756318d61f2562f67dbb1f9c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "akinsho",
-        "repo": "toggleterm.nvim",
         "type": "github"
       }
     },

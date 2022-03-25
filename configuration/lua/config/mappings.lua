@@ -64,8 +64,7 @@ function M.setup()
 
     ['<leader>n'] = { '<cmd>nohl<cr>', 'Disable search highlight' },
 
-    ['<leader>;'] = { '<cmd>ToggleTerm direction=floating' },
-    ['<C-\\>'] = { '<cmd>ToggleTerm direction=vertical' },
+    ['<leader>;'] = { function() require'FTerm'.toggle() end, 'Toggle floating terminal' },
   }, { mode = 'n' })
 
   require"which-key".register({

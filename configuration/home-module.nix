@@ -45,6 +45,7 @@ let
     crates-nvim
     direnv-vim
     friendly-snippets
+    fterm
     gitsigns-nvim
     indent-blankline
     lsp-colors-nvim
@@ -76,7 +77,6 @@ let
     telescope-lsp-handlers
     telescope-nvim
     telescope-zoxide
-    toggleterm
     trouble-nvim
     which-key-nvim
   ];
