@@ -76,6 +76,7 @@ let
     telescope-lsp-handlers
     telescope-nvim
     telescope-zoxide
+    toggleterm
     trouble-nvim
     which-key-nvim
   ];

@@ -133,17 +133,6 @@ require'telescope._extensions.zoxide.config'.setup{
   }
 }
 
-require('FTerm').setup({
-  cmd = "zsh",
-  -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "└" },
-  border = "rounded",
-  dimensions = {
-    height = 0.8,
-    width = 0.8
-  },
-  auto_close = true
-})
-
 local dap = require'dap'
 dap.defaults.fallback.external_terminal = {
   command = 'alacritty',
@@ -262,4 +251,7 @@ require"indent_blankline".setup {
   show_current_context = true,
   show_current_context_start = true,
   use_treesitter = true,
+}
+
+require'toggleterm'.setup {
 }
