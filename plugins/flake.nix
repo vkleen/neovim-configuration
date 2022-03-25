@@ -23,6 +23,7 @@
     vimplugin-fterm = { url = github:numtostr/fterm.nvim; flake = false; };
     vimplugin-fzf-vim = { url = github:junegunn/fzf.vim; flake = false; };
     vimplugin-gitsigns-nvim = { url = github:lewis6991/gitsigns.nvim; flake = false; };
+    vimplugin-guihua = { url = github:ray-x/guihua.lua; flake = false; };
     vimplugin-indent-blankline = { url = github:lukas-reineke/indent-blankline.nvim; flake = false; };
     vimplugin-lightspeed-nvim = { url = github:ggandor/lightspeed.nvim; flake = false; };
     vimplugin-lsp-colors-nvim = { url = github:folke/lsp-colors.nvim; flake = false; };
@@ -31,6 +32,7 @@
     vimplugin-lsp_signature = { url = github:ray-x/lsp_signature.nvim; flake = false; };
     vimplugin-lualine = { url = github:hoob3rt/lualine.nvim; flake = false; };
     vimplugin-luasnip = { url = github:l3mon4d3/luasnip; flake = false; };
+    vimplugin-navigator = { url = github:ray-x/navigator.lua; flake = false; };
     vimplugin-neorg = { url = github:nvim-neorg/neorg; flake = false; };
     vimplugin-nerdcommenter = { url = github:preservim/nerdcommenter; flake = false; };
     vimplugin-nftables = { url = github:nfnty/vim-nftables; flake = false; };

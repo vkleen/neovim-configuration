@@ -75,12 +75,19 @@ final: prev: {
     '';
   });
 
-
   direnv-vim = prev.direnv-vim.overrideAttrs (oa: {
     preFixup = oa.preFixup or "" + ''
       substituteInPlace $out/autoload/direnv.vim \
         --replace "let s:direnv_cmd = get(g:, 'direnv_cmd', 'direnv')" \
           "let s:direnv_cmd = get(g:, 'direnv_cmd', '${pkgs.lib.getBin pkgs.direnv}/bin/direnv')"
+    '';
+  });
+
+  guihua = prev.guihua.overrideAttrs (old: {
+    postInstall = ''
+      chmod u+w $out -R
+      cd $out/lua/fzy
+      make
     '';
   });
 }
