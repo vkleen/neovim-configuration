@@ -9,6 +9,7 @@ function M.setup()
   }
   
   require'navigator'.setup{
+    debug = true,
     default_mapping = false,
     lsp_signature_help = true,
     lsp = {
@@ -84,8 +85,15 @@ function M.setup()
           hi LspReferenceWrite cterm=bold ctermbg=red guifg=%s guibg=%s
         ]], dark_yellow, black, dark_yellow, black, dark_yellow, black), false)
       end
-    end
+    end,
   }
+  require'null-ls'.setup({
+    sources = {
+      require'null-ls'.builtins.formatting.prettier,
+      require'null-ls'.builtins.formatting.rustfmt,
+      require'null-ls'.builtins.formatting.stylua,
+    },
+  })
 end
 
 return M
