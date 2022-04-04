@@ -68,7 +68,7 @@ function M.setup()
       if client.resolved_capabilities.document_symbol then
         require"which-key".register({
               ['<C-s>'] = { function()
-                require"nvim-tree".close()
+                require"nvim-tree.view".close()
                 vim.cmd('AerialClose')
                 vim.cmd('AerialOpen')
               end, 'Symbol sidebar' }
