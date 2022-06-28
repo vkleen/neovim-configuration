@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/tree-sitter/tree-sitter-embedded-template",
+  "rev": "1a538da253d73f896b9f6c0c7d79cda58791ac5c",
+  "date": "2022-06-20T17:01:16+02:00",
+  "path": "/nix/store/lij3d20kfd3nv8yiyvdfx89qxaid8la6-tree-sitter-embedded-template-1a538da",
+  "sha256": "1bdiiahswn7z39xwzyp71hm3b463ppw2qdygxld0iha0950sjwcx",
+  "fetchLFS": false,
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": true
+}

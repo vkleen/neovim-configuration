@@ -1,11 +1,11 @@
 {
   "url": "https://github.com/stsewd/tree-sitter-comment",
-  "rev": "6975eb268f42df2afc313f96c0693e284685dba7",
-  "date": "2022-01-22T20:58:19-05:00",
-  "path": "/nix/store/qvfwgx7mmdsagyadrqgcji9i8v6csfpy-tree-sitter-comment-6975eb2",
-  "sha256": "009krarzs9qykd8fas67gychjzcbgj8j0jm9h0963dlxs4hyay73",
+  "rev": "a37ca370310ac6f89b6e0ebf2b86b2219780494e",
+  "date": "2022-03-28T20:21:33-05:00",
+  "path": "/nix/store/46w01vqc2i5aj8zzhnj3kzyp1x1mnk9w-tree-sitter-comment-a37ca37",
+  "sha256": "1wbwql2ifq8h4j6mzipbyhxzidyzqd1m44cq5smwm7i1bjnxbcg7",
   "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
-  "leaveDotGit": false
+  "leaveDotGit": true
 }
