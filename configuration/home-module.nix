@@ -95,7 +95,7 @@ in {
       default = with pkgs; [
         curl
         jq
-        rnix-lsp
+        #rnix-lsp
         stylua
       ];
       description = "Extra packages in PATH for neovim";
