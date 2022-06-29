@@ -51,9 +51,6 @@
   tree-sitter-supercollider = (builtins.fromJSON (builtins.readFile ./tree-sitter-supercollider.json));
   tree-sitter-slint = (builtins.fromJSON (builtins.readFile ./tree-sitter-slint.json));
   tree-sitter-haskell = (builtins.fromJSON (builtins.readFile ./tree-sitter-haskell.json));
-  tree-sitter-hcl = (builtins.fromJSON (builtins.readFile ./tree-sitter-hcl.json));
-  tree-sitter-markdown = (builtins.fromJSON (builtins.readFile ./tree-sitter-markdown.json));
-  tree-sitter-markdown_inline = (builtins.fromJSON (builtins.readFile ./tree-sitter-markdown_inline.json));
   tree-sitter-tlaplus = (builtins.fromJSON (builtins.readFile ./tree-sitter-tlaplus.json));
   tree-sitter-toml = (builtins.fromJSON (builtins.readFile ./tree-sitter-toml.json));
   tree-sitter-glimmer = (builtins.fromJSON (builtins.readFile ./tree-sitter-glimmer.json));
@@ -113,7 +110,6 @@
   tree-sitter-wgsl = (builtins.fromJSON (builtins.readFile ./tree-sitter-wgsl.json));
   tree-sitter-m68k = (builtins.fromJSON (builtins.readFile ./tree-sitter-m68k.json));
   tree-sitter-proto = (builtins.fromJSON (builtins.readFile ./tree-sitter-proto.json));
-  tree-sitter-v = (builtins.fromJSON (builtins.readFile ./tree-sitter-v.json));
   tree-sitter-tiger = (builtins.fromJSON (builtins.readFile ./tree-sitter-tiger.json));
   tree-sitter-norg_meta = (builtins.fromJSON (builtins.readFile ./tree-sitter-norg_meta.json));
   tree-sitter-norg_table = (builtins.fromJSON (builtins.readFile ./tree-sitter-norg_table.json));

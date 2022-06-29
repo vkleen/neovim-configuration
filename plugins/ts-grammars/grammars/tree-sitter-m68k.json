@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/grahambates/tree-sitter-m68k",
-  "rev": "e54461d392fb0b7664f8a8d22d38ca0f74b69d7f",
-  "date": "2022-06-28T09:13:08+01:00",
-  "path": "/nix/store/j6yc78v6gzkramj3995ljsnsd9ai9dvf-tree-sitter-m68k-e54461d",
-  "sha256": "1kx9rswpf8sss7jc3airizai5gxzm0k3pb0v86ak6n44xhhihshp",
+  "rev": "5d8e1915284b59e1c4780f79218d5fa6b03016dc",
+  "date": "2022-06-28T18:25:50+01:00",
+  "path": "/nix/store/ybcvfcdfpxdaqw7np1avk259qzfjk0p8-tree-sitter-m68k-5d8e191",
+  "sha256": "160y34rnsqc8lgfayh1glf4r0fgkb6rbngrkqfdspgksmkl92kyi",
   "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,

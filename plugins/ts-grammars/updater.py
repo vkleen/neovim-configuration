@@ -28,7 +28,10 @@ with open(grammars_file_path, "w") as grammars_file:
     grammars_file.write("{\n")
     # phpdoc require tree-sitter-php as a node dependency, too much effort
     # todotxt is not in lockfile as of now (1.3.22)
-    problematic_parsers = ["phpdoc", "todotxt"]
+    # markdown and markdown_inline are subdirectories of a repository, too much effort to adjust build
+    # v is a subdirectory of a repository, too much effort to adjust build
+    # hcl prefetch yields wrong hash, reasons not investigated
+    problematic_parsers = ["phpdoc", "todotxt", "markdown", "markdown_inline", "hcl", "v"]
 
     for data in parsers_data:
         parser_name, parser_repo = data
