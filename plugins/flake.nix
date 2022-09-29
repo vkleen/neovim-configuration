@@ -63,6 +63,7 @@
     vimplugin-telescope-ui-select = { url = github:nvim-telescope/telescope-ui-select.nvim; flake = false; };
     vimplugin-telescope-zoxide = { url = github:jvgrootveld/telescope-zoxide; flake = false; };
     vimplugin-trouble-nvim = { url = github:folke/trouble.nvim; flake = false; };
+    vimplugin-vim-nickel = { url = github:nickel-lang/vim-nickel; flake = false; };
     vimplugin-vim-vsnip-integ = { url = github:hrsh7th/vim-vsnip-integ; flake = false; };
     vimplugin-vim-vsnip = { url = github:hrsh7th/vim-vsnip; flake = false; };
     vimplugin-which-key-nvim = { url = github:folke/which-key.nvim; flake = false; };
