@@ -80,6 +80,7 @@ let
     telescope-ui-select
     telescope-zoxide
     trouble-nvim
+    vim-nickel
     which-key-nvim
   ];
 in {
