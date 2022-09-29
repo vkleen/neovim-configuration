@@ -1,5 +1,77 @@
 local M = {}
 
+function on_attach(client, bufnr)
+  if client.resolved_capabilities.document_formatting then
+    require"which-key".register({
+      ['<leader>rf'] = { function() vim.lsp.buf.formatting() end, 'Format buffer' }
+    }, { buffer = bufnr, mode = 'n' })
+  end
+  if client.resolved_capabilities.document_range_formatting then
+    require"which-key".register({
+      ['<leader>rf'] = { function() vim.lsp.buf.range_formatting() end, 'Format buffer' }
+    }, { buffer = bufnr, mode = 'v' })
+  end
+  
+  require"which-key".register({
+    ['<leader>'] = {
+      r = { name = 'LSP' }
+    },
+    ['<leader>r'] = {
+      h = { function() vim.lsp.buf.hover{ popup_opts = { border = single } } end, 'Show hover info' },
+      s = { function() vim.lsp.buf.signature_help() end, 'Show signature help' },
+      r = { function() require'navigator.rename'.rename() end, 'Rename identifier' },
+      l = { function() require'navigator.codelens'.run_action() end, 'Rename identifier' },
+      x = { function() vim.lsp.buf.code_action() end, 'Code actions' },
+    },
+    ['g'] = {
+      d = { function() vim.lsp.buf.definition() end, 'Go to definition' },
+      D = { function() vim.lsp.buf.type_definition() end, 'Go to type definition' },
+      p = { function() require"navigator.definition".definition_preview() end, 'Show definition preview' },
+      r = { function() vim.lsp.buf.references() end, 'References' },
+      G = { function() require'trouble'.toggle("document_diagnostics") end, 'Show diagnostic' },
+      L = { function() require'navigator.diagnostics'.show_diagnostics() end, 'Show line diagnostic' },
+    },
+    [']'] = {
+      d = { function() vim.lsp.buf.diagnostic.goto_next{ border = 'single' } end, 'Go to next diagnostic' },
+      r = { function() require'navigator.treesitter'.goto_next_usage() end, 'Go to next usage' },
+    },
+    ['['] = {
+      d = { function() vim.lsp.buf.diagnostic.goto_prev{ border = 'single' } end, 'Go to previous diagnostic' },
+      r = { function() require'navigator.treesitter'.goto_previous_usage() end, 'Go to previous usage' },
+    },
+  }, { buffer = bufnr, mode = 'n' })
+  
+  require"which-key".register({
+    ['<leader>'] = {
+      r = { name = 'LSP' }
+    },
+    ['<leader>r'] = {
+      X = { function() vim.lsp.buf.range_code_action() end, 'Code actions' },
+    },
+  }, { buffer = bufnr, mode = 'v' })
+  
+  if client.resolved_capabilities.document_symbol then
+    require"which-key".register({
+          ['<C-s>'] = { function()
+            require"nvim-tree.view".close()
+            vim.cmd('AerialClose')
+            vim.cmd('AerialOpen')
+          end, 'Symbol sidebar' }
+    }, { buffer = bufnr, mode = 'n' })
+  end
+  
+  
+  if client.resolved_capabilities.document_highlight then
+    dark_yellow = require"config.colors".colors.dark_yellow
+    black = require"config.colors".colors.black
+    vim.api.nvim_exec(string.format([[
+      hi LspReferenceRead cterm=bold ctermbg=red guifg=%s guibg=%s
+      hi LspReferenceText cterm=bold ctermbg=red guifg=%s guibg=%s
+      hi LspReferenceWrite cterm=bold ctermbg=red guifg=%s guibg=%s
+    ]], dark_yellow, black, dark_yellow, black, dark_yellow, black), false)
+  end
+end
+
 function M.setup()
   require"aerial".setup{
     default_direction = "left",
@@ -15,77 +87,7 @@ function M.setup()
     lsp = {
       format_on_save = false,
     },
-    on_attach = function(client, bufnr)
-      if client.resolved_capabilities.document_formatting then
-        require"which-key".register({
-          ['<leader>rf'] = { function() vim.lsp.buf.formatting() end, 'Format buffer' }
-        }, { buffer = bufnr, mode = 'n' })
-      end
-      if client.resolved_capabilities.document_range_formatting then
-        require"which-key".register({
-          ['<leader>rf'] = { function() vim.lsp.buf.range_formatting() end, 'Format buffer' }
-        }, { buffer = bufnr, mode = 'v' })
-      end
-  
-      require"which-key".register({
-        ['<leader>'] = {
-          r = { name = 'LSP' }
-        },
-        ['<leader>r'] = {
-          h = { function() vim.lsp.buf.hover{ popup_opts = { border = single } } end, 'Show hover info' },
-          s = { function() vim.lsp.buf.signature_help() end, 'Show signature help' },
-          r = { function() require'navigator.rename'.rename() end, 'Rename identifier' },
-          l = { function() require'navigator.codelens'.run_action() end, 'Rename identifier' },
-          x = { function() vim.lsp.buf.code_action() end, 'Code actions' },
-        },
-        ['g'] = {
-          d = { function() vim.lsp.buf.definition() end, 'Go to definition' },
-          D = { function() vim.lsp.buf.type_definition() end, 'Go to type definition' },
-          p = { function() require"navigator.definition".definition_preview() end, 'Show definition preview' },
-          r = { function() vim.lsp.buf.references() end, 'References' },
-          G = { function() require'trouble'.toggle("document_diagnostics") end, 'Show diagnostic' },
-          L = { function() require'navigator.diagnostics'.show_diagnostics() end, 'Show line diagnostic' },
-        },
-        [']'] = {
-          d = { function() vim.lsp.buf.diagnostic.goto_next{ border = 'single' } end, 'Go to next diagnostic' },
-          r = { function() require'navigator.treesitter'.goto_next_usage() end, 'Go to next usage' },
-        },
-        ['['] = {
-          d = { function() vim.lsp.buf.diagnostic.goto_prev{ border = 'single' } end, 'Go to previous diagnostic' },
-          r = { function() require'navigator.treesitter'.goto_previous_usage() end, 'Go to previous usage' },
-        },
-      }, { buffer = bufnr, mode = 'n' })
-  
-      require"which-key".register({
-        ['<leader>'] = {
-          r = { name = 'LSP' }
-        },
-        ['<leader>r'] = {
-          X = { function() vim.lsp.buf.range_code_action() end, 'Code actions' },
-        },
-      }, { buffer = bufnr, mode = 'v' })
-  
-      if client.resolved_capabilities.document_symbol then
-        require"which-key".register({
-              ['<C-s>'] = { function()
-                require"nvim-tree.view".close()
-                vim.cmd('AerialClose')
-                vim.cmd('AerialOpen')
-              end, 'Symbol sidebar' }
-        }, { buffer = bufnr, mode = 'n' })
-      end
-  
-  
-      if client.resolved_capabilities.document_highlight then
-        dark_yellow = require"config.colors".colors.dark_yellow
-        black = require"config.colors".colors.black
-        vim.api.nvim_exec(string.format([[
-          hi LspReferenceRead cterm=bold ctermbg=red guifg=%s guibg=%s
-          hi LspReferenceText cterm=bold ctermbg=red guifg=%s guibg=%s
-          hi LspReferenceWrite cterm=bold ctermbg=red guifg=%s guibg=%s
-        ]], dark_yellow, black, dark_yellow, black, dark_yellow, black), false)
-      end
-    end,
+    on_attach = on_attach,
   }
   require'null-ls'.setup({
     sources = {
@@ -94,7 +96,7 @@ function M.setup()
       require'null-ls'.builtins.formatting.stylua,
     },
   })
-  require'lspconfig'.nickel_ls.setup{}
+  require'lspconfig'.nickel_ls.setup{on_attach = on_attach}
 end
 
 return M
