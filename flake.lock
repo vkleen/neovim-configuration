@@ -192,6 +192,7 @@
         "vimplugin-telescope-ui-select": "vimplugin-telescope-ui-select",
         "vimplugin-telescope-zoxide": "vimplugin-telescope-zoxide",
         "vimplugin-trouble-nvim": "vimplugin-trouble-nvim",
+        "vimplugin-vim-nickel": "vimplugin-vim-nickel",
         "vimplugin-vim-vsnip": "vimplugin-vim-vsnip",
         "vimplugin-vim-vsnip-integ": "vimplugin-vim-vsnip-integ",
         "vimplugin-which-key-nvim": "vimplugin-which-key-nvim"
@@ -199,11 +200,11 @@
       "locked": {
         "dir": "plugins",
         "host": "git.sr.ht.kleen.org",
-        "lastModified": 1656515296,
-        "narHash": "sha256-jlw7d+mEQomQBrQvk1pwyAgaPzLSR358wtaoNWhZtlo=",
+        "lastModified": 1664442821,
+        "narHash": "sha256-Q7BmAEIRbk7X7zSQXjj0bR/idE5DY2BVF0yfHUHdY+A=",
         "owner": "~vkleen",
         "repo": "neovim-configuration",
-        "rev": "8747f84633ab4935abe09c07c91dff40355ff9a8",
+        "rev": "1c1cb2bb2f9c15af4cf55a975a7b42b7a6adb795",
         "type": "sourcehut"
       },
       "original": {
@@ -1123,6 +1124,22 @@
       "original": {
         "owner": "folke",
         "repo": "trouble.nvim",
+        "type": "github"
+      }
+    },
+    "vimplugin-vim-nickel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647439425,
+        "narHash": "sha256-eOxZECuK0yjtVc69+0CglSM54EesCSJ3xqwSEwrjI9I=",
+        "owner": "nickel-lang",
+        "repo": "vim-nickel",
+        "rev": "2f0f5f8ce2a8e719a5e39d7210ca914ae403374c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nickel-lang",
+        "repo": "vim-nickel",
         "type": "github"
       }
     },

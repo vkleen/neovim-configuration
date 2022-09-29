@@ -94,6 +94,7 @@ function M.setup()
       require'null-ls'.builtins.formatting.stylua,
     },
   })
+  require'lspconfig'.nickel_ls.setup{}
 end
 
 return M
