@@ -6,10 +6,10 @@ let
     exec ${pkgs.neovide}/bin/neovide --multigrid "$@"
   '';
 
-  finalPackage = pkgs.wrapNeovimUnstable neovim.neovim-unwrapped
-    (neovimConfig  // {
-      wrapperArgs = neovimConfig.wrapperArgs ++ [ "--suffix" "PATH" ":" "${lib.makeBinPath cfg.extraPackages}" ];
-    });
+  #finalPackage = pkgs.wrapNeovimUnstable neovim.neovim-unwrapped
+  #  (neovimConfig  // {
+  #    wrapperArgs = neovimConfig.wrapperArgs ++ [ "--suffix" "PATH" ":" "${lib.makeBinPath cfg.extraPackages}" ];
+  #  });
 
   moduleConfigure = {
     packages.neovim-config = {
@@ -17,20 +17,22 @@ let
       opt = [];
     };
     beforePlugins = "";
-  };
-
-  neovimConfig = pkgs.neovimUtils.makeNeovimConfig {
-    vimAlias = true;
-    viAlias = true;
-    withPython3 = true;
-    configure = moduleConfigure;
     customRC = ''
       lua require"neovim-config".setup{}
     '';
   };
 
+  finalPackage = pkgs.neovimUtils.legacyWrapper neovim.neovim-unwrapped {
+    vimAlias = true;
+    viAlias = true;
+    withPython3 = true;
+    configure = moduleConfigure;
+    extraMakeWrapperArgs = lib.concatStringsSep " " [ "--suffix" "PATH" ":" "${lib.makeBinPath cfg.extraPackages}" ];
+  };
+
   configurationPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix {
-    name = "neovim-config";
+    pname = "neovim-config";
+    version = "flake";
     src = ./.;
     dependencies = plugins;
   };

@@ -200,11 +200,11 @@
       "locked": {
         "dir": "plugins",
         "host": "git.sr.ht.kleen.org",
-        "lastModified": 1664442821,
-        "narHash": "sha256-Q7BmAEIRbk7X7zSQXjj0bR/idE5DY2BVF0yfHUHdY+A=",
+        "lastModified": 1665004292,
+        "narHash": "sha256-KCJq/hVYkiXVE0OWg0fxCi/BoFf8pzYOqyZMEm23CR4=",
         "owner": "~vkleen",
         "repo": "neovim-configuration",
-        "rev": "1c1cb2bb2f9c15af4cf55a975a7b42b7a6adb795",
+        "rev": "94e9e9f7389f6a1cf4f0cc3cb2eae3a18d781dc9",
         "type": "sourcehut"
       },
       "original": {
