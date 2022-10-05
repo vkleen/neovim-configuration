@@ -85,7 +85,8 @@
     vimPluginSubdir = pkgs: ref_: d: let
       ref = strings.removePrefix "vimplugin-" ref_;
     in addRtp "${ref}" (pkgs.stdenv.mkDerivation {
-      name = "${strings.sanitizeDerivationName ref}";
+      pname = "${strings.sanitizeDerivationName ref}";
+      version = "flake";
       forceShare = [ "man" "info" ];
       nativeBuildInputs = optional
         (pkgs.stdenv.hostPlatform == pkgs.stdenv.buildPlatform)
